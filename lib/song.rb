@@ -41,7 +41,6 @@ end
 
 def self.alphebetical
   @@all.sort_by{|song|song.name}
-  song
 end
 
 def self.new_from_filename(filename)

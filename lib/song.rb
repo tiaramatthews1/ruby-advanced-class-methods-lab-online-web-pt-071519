@@ -37,7 +37,7 @@ def self.find_or_create_by_name(name)
 end
 
 def self.alphebetical()
-  @@all.sort_by! {|song| song.name}
+  @@all.sort_by{|x| x.name}
 end
 
 def self.new_from_filename(filename)

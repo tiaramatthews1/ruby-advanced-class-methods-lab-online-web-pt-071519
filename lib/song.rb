@@ -40,8 +40,8 @@ def self.find_or_create_by_name(title)
 end
 
 def self.alphebetical
-  sorted = self.all.sort_by{|song|song.name}
-  sorted
+  @@all.sort_by{|song|song.name}
+  song
 end
 
 def self.new_from_filename(filename)

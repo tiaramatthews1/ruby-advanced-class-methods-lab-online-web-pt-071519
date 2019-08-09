@@ -22,18 +22,18 @@ def self.new_by_name(title)
   song
 end
 
-def self.create_by_name(title)
+def self.create_by_name(name)
   song = self.create 
   song.name = title 
   song 
 end
 
-def self.find_by_name(title)
+def self.find_by_name(name)
   
 end
 
-def self.find_or_create_by_name(title)
-  self.create_by_name(title)
+def self.find_or_create_by_name(name)
+  self.create_by_name(name)
 end
 
 def self.alphebetical
